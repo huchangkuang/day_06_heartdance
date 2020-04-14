@@ -4,10 +4,16 @@
     box-sizing:border-box;
 }
 p{
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
 }
 .heart{
+    width: 400px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.heart:hover{
     width: 400px;
     height: 400px;
     margin-left: auto;
@@ -48,4 +54,50 @@ p{
     0%{transform: scale(1);}
     50%{transform: scale(1.5);}
     100%{transform: scale(1);}
+}
+/* transition制作红心 */
+.heart_transition{
+    width: 400px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.heart_transition:hover{
+    width: 400px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    transform: scale(1.5);
+    transition: all 1s ;
+}
+#left_transition{
+    background:red;
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 100px;
+    top: 150px;
+    border-radius: 50% 0 0 50%;
+}
+#squre_transition{
+    background:red;
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 150px;
+    top: 200px;
+}
+#right_transition{
+    background:red;
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 200px;
+    top: 150px;
+    border-radius: 50% 50% 0 0;
 }
